@@ -1,6 +1,6 @@
 # Molaway Homebrew tap
 
-Maintainer-owned distribution of [Molaway](https://github.com/boorkymoorky/molaway), a personal, non-commercial, privacy-first macOS break reminder by Burak Yelkenci, derived from [Offscreen](https://github.com/dayo/Offscreen). Both copyright notices are retained under the [MIT license](LICENSE). Prepared with ChatGPT/Codex assistance and reviewed with targeted checks.
+Maintainer-owned distribution of [Molaway](https://github.com/boorkymoorky/molaway), a personal, non-commercial, privacy-first macOS break reminder by Burak Yelkenci, derived from [Offscreen](https://github.com/dayaki/offscreen). Both copyright notices are retained under the [MIT license](LICENSE). Prepared with ChatGPT/Codex assistance and reviewed with targeted checks.
 
 ## Availability
 
