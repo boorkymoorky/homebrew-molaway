@@ -1,0 +1,28 @@
+name: Verify tap
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: macos-26
+    timeout-minutes: 10
+    env:
+      HOMEBREW_NO_ANALYTICS: 1
+      HOMEBREW_NO_AUTO_UPDATE: 1
+      HOMEBREW_NO_INSTALL_FROM_API: 1
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
+      - name: Native cask style
+        run: brew style Casks/molaway.rb
+      - name: Tap cask audit
+        run: |
+          tap_dir="$(brew --repository)/Library/Taps/boorkymoorky/homebrew-molaway"
+          mkdir -p "$(dirname "$tap_dir")"
+          ln -s "$GITHUB_WORKSPACE" "$tap_dir"
+          brew audit --cask --strict boorkymoorky/molaway/molaway
