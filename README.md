@@ -6,7 +6,7 @@ Maintainer-owned distribution of [Molaway](https://github.com/boorkymoorky/molaw
 
 This tap pins the existing **2.2.5** Apple Silicon download. It requires **macOS 15 or later**. M1–M9 development changes on Molaway's main branch are absent from this download. This tap is maintained by Molaway; it is not the official `homebrew/cask` repository or a Homebrew endorsement.
 
-Public tap installation verification is in progress. Use the [verified direct download guide](https://github.com/boorkymoorky/molaway/blob/main/docs/INSTALL.md) until the complete tap command and lifecycle checks pass.
+The public tap command and isolated install/fetch/reinstall/uninstall checks passed. **First launch after normal Gatekeeper approval remains pending** and is deferred at the maintainer’s request. End-user installation instructions remain withheld until that check passes; use the [verified direct download guide](https://github.com/boorkymoorky/molaway/blob/main/docs/INSTALL.md). See [verification evidence and limits](VERIFICATION.md).
 
 ## Signing and privacy
 
